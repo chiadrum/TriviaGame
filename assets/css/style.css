@@ -1,0 +1,17 @@
+body {
+  background-color: mediumvioletred;
+  margin: 40px;
+}
+
+#game {
+  padding: 20px;
+  border: 4px groove orangered;
+  height: 60vh;
+  margin: 40px;
+  align-items: center;
+  text-align: center;
+}
+#button {
+  margin: 20px;
+  border: 5px groove firebrick;
+}
