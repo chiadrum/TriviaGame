@@ -1,17 +1,62 @@
 body {
-  background-color: mediumvioletred;
+  /* background-color: mediumvioletred; */
   margin: 40px;
-}
+  background-image: url("../images/Eddie2.jpg");
+  background-repeat: repeat-x;
 
-#game {
-  padding: 20px;
-  border: 4px groove orangered;
-  height: 60vh;
-  margin: 40px;
-  align-items: center;
+  background-size: cover;
+  color: firebrick;
+  text-shadow: 3px 2px red;
   text-align: center;
 }
-#button {
-  margin: 20px;
-  border: 5px groove firebrick;
+#wrapper {
+  padding: 100px;
+  border: 12px groove blueviolet;
+  border-radius: 10px;
+  border-image: url("../images/Killers.jpeg") 50 round;
+  height: 90vh;
+}
+h1 {
+  font-size: 500%;
+}
+.answer-button {
+  display: inline-block;
+  margin: 50px;
+  border: 12px groove blueviolet;
+  background-image: url("../images/Trooper.jpeg");
+  color: black;
+  text-shadow: 3px 2px red;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  font-size: 130%;
+}
+.answer-button:hover {
+  color: cyan;
+  font-size: 150%;
+}
+#start {
+  margin: 50px;
+  border: 12px groove blueviolet;
+  background-image: url("../images/Trooper.jpeg");
+  color: black;
+  text-shadow: 3px 2px red;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  font-size: 200%;
+}
+#start:hover {
+  color: cyan;
+}
+#reset {
+  margin: 50px;
+  border: 12px groove blueviolet;
+  background-image: url("../images/Trooper.jpeg");
+  color: black;
+  text-shadow: 3px 2px red;
+  text-align: center;
+  width: 120px;
+  height: 100px;
+  font-size: 150%;
 }

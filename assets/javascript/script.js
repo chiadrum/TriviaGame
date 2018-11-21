@@ -44,6 +44,34 @@ $(document).ready(function() {
       ],
       correctAnswer: "Ozzy Osbourne",
       img: "assets/images/pic.jpg"
+    },
+    {
+      question: "What guitarist played lead on 'The Sails of Charon'?",
+      answers: [
+        "Jimi Hendrix",
+        "Uli Jon Roth",
+        "Dave Murray",
+        "Michael Schenker"
+      ],
+      correctAnswer: "Uli Jon Roth",
+      img: "assets/images/pic.jpg"
+    },
+    {
+      question: "Who was the vocalist on the album 'Killers'?",
+      answers: ["Bruce Dickinson", "Glenn Hughes", "Bon Scott", "Paul Di'Anno"],
+      correctAnswer: "Paul Di'Anno",
+      img: "assets/images/pic.jpg"
+    },
+    {
+      question: "What guitarist played on the album 'Iron Maiden'?",
+      answers: [
+        "BB KIng",
+        "Uli Jon Roth",
+        "Dennis Stratton",
+        "Michael Schenker"
+      ],
+      correctAnswer: "Dennis Stratton",
+      img: "assets/images/pic.jpg"
     }
   ];
 
@@ -128,6 +156,9 @@ $(document).ready(function() {
       clearInterval(timer);
       game.correct++;
       $("#subwrapper").html("<h2>YOU GOT IT RIGHT!</h2>");
+      $("#subwrapper").append(
+        '<iframe src="https://giphy.com/embed/nKQs7fb97dK4E" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/metal-heavy-bass-nKQs7fb97dK4E">via GIPHY</a></p>'
+      );
       if (game.currentQuestion == questions.length - 1) {
         setTimeout(game.results, 3 * 1000);
       } else {
@@ -139,6 +170,9 @@ $(document).ready(function() {
       clearInterval(timer);
       game.incorrect++;
       $("#subwrapper").html("<h2>YOU GOT IT WRONG!</h2>");
+      $("#subwrapper").append(
+        '<iframe src="https://giphy.com/embed/GjcDoK2aAA0zC" width="480" height="204" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/obi-wan-GjcDoK2aAA0zC">via GIPHY</a></p>'
+      );
       $("#subwrapper").append(
         "<h3>The correct answer was: " +
           questions[game.currentQuestion].correctAnswer +
@@ -152,7 +186,7 @@ $(document).ready(function() {
     },
     reset: function() {
       game.currentQuestion = 0;
-      game.counter = 0;
+      //game.counter = 0;
       game.correct = 0;
       game.incorrect = 0;
       game.unanswered = 0;
